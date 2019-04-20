@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <% include partials/head.ejs %>
+    </head>
+    <body class="todo">
+		<% include partials/nav.ejs %>
+		<div class="container">
+			<div class="header">
+				<h1>Todo List</h1>
+			</div>
+			<div id="todo-table">
+				<form action="">
+					<input type="text" name="item" placeholder="Add new item..." required>
+					<button type="submit">Add Item</button>
+				</form>
+				<ul class="list-of-todos">
+					<% for(var i=0; i<todos.length; i++){ %>
+						<li> <%= todos[i].item %> </li>
+					<% } %>
+				</ul>
+			</div>
+		</div>
+    </body>
+</html>

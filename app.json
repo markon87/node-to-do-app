@@ -1,0 +1,8 @@
+{
+  "name": "Node JS ToDo App",
+  "description": "A test aplication",
+  "repository": "https://git.heroku.com/marko-todo-app.git",
+  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+  "keywords": ["node", "express", "heroku", "todo-app"],
+  "image": "heroku/nodejs"
+}

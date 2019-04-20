@@ -1,0 +1,134 @@
+body{
+    background: #eee;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+div.container{
+	width: 95%;
+    margin: 0 auto;
+}
+
+.header{
+	text-align: center;
+	margin-bottom:15px;
+}
+
+#todo-table{
+    position: relative;
+    background: #e84a3e;
+    padding: 20px;
+    box-sizing: border-box;
+	box-shadow: 5px 4px 11px 0px #333;
+}
+
+#todo-table form:after{
+    margin: 0;
+    content: '';
+    display: block;
+    clear: both;
+}
+
+input[type="text"]{
+    width: 70%;
+    padding: 20px;
+    background:#eee;
+    border: 0;
+    float: left;
+    font-size: 20px;
+    color: #23282e;
+	border-radius: 0;
+	margin: 0;
+}
+
+button{
+    padding: 20px;
+    width: 30%;
+    float: left;
+    background: #23282e;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+	margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.list-of-todos li{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+ul.list-of-todos li:hover{
+    text-decoration: line-through;
+    background: rgba(0,0,0,0.2);
+}
+h1{
+	color: #e84a3e;
+    margin: 0;
+}
+body.home h1{
+	font-size: 4rem;
+	text-align: left;
+	text-transform: uppercase;
+	width: 300px;
+}
+body.home a{
+	color: #23282e;
+}
+body.todo h1{
+	font-family: 'Poiret One', cursive;
+}
+body.todo h1:before{
+	content: "";
+	display: inline-block;
+	width: 40px;
+	height:40px;
+    background: url(/assets/logo.png) no-repeat center;
+	background-size: contain;
+	margin-right: 10px;
+	vertical-align: text-top;
+}
+.navigation {
+    background-color: #23282e;
+	margin-bottom: 20px;
+}
+.navigation nav{
+	width: 95%;
+	margin: 0 auto;
+}
+.navigation nav ul li {
+    display: inline-block;
+    margin: 15px 10px;
+}
+.navigation nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+.navigation nav ul li a:hover,
+.navigation nav ul li a.active{
+    color: #e84a3e;
+}
+@media screen and (max-width: 540px) {
+   input[type="text"]{
+		width: 100%;
+	}
+
+	button{
+		width: 100%;
+		float: none;
+	}
+}
